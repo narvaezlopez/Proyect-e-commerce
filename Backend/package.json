@@ -9,6 +9,7 @@
   "author": "Julian Narvaez Daniel Sanchez Jose Roldan",
   "license": "ISC",
   "dependencies": {
+    "@angular/fire": "^6.0.2",
     "express": "^4.17.1",
     "sequelize": "^6.3.3"
   },

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --white-custom: #ffffff;
+    --lightgreen-custom: #00F87C;
+    --black-custom: #000000;
+    --lightgrey-custom: #C4C4C4;
+    --darkgray-custom: #3F3F3F;
+    --skyblue-custom: #497CFF;
+    --orangered-custom: #FF5C5C;
+    --darkgreen-custom: #004020;
+
+}
+
+.buttons{
+    color: var(--white-custom);
+}

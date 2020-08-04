@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
-  title = 'store';
+export class HomeComponent implements OnInit {
 
   constructor(private firestore: AngularFirestore) { }
 
@@ -19,4 +18,6 @@ export class AppComponent {
       console.log(this.user);
     });
   }
+
+  
 }

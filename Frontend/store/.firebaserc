@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "e-commerce-app-54678": {
+      "hosting": {
+        "store": [
+          "e-commerce-app-54678"
+        ]
+      }
+    }
+  }
+}
