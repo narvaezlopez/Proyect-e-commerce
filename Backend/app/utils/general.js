@@ -46,6 +46,16 @@ const General = function(){
         return model;
     };
 
+    this.connectMySQL = function(){
+        General.mysql.connect(function(err) {
+            if (err){
+                console.log(err);
+            }else{
+                console.log("Connection to MySQL succesfully");
+            }
+        });
+    }
+
     return this;
 };
 module.exports = General;
