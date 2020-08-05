@@ -14,10 +14,36 @@ const mysql_model = function(MySQL){
     //INSERT DATA ON TABLE
     this.addData=function(table, params){
         return new Promise((resolve,reject)=>{
-            MySQL.query("INSERT INTO actor(first_name, last_name) VALUES('julian', 'narvaez')", function (err, result, fields) {
-                if (err) throw err;
-                console.log(fields);
-                resolve(result);
+
+            let query = 'INSERT INTO ' + table + ' ('
+            let columnNames = '';
+            let columnValues = '';
+            for (let [key, value] of Object.entries(params)) {
+                columnNames += key + ", "
+                if (isNaN(value)) {
+                    columnValues += "'" + value + "', ";
+                } else {
+                    columnValues += value + ", ";
+                }
+            }
+            query += columnNames.substring(0, columnNames.length - 2);
+            query += ') values (';
+            query += columnValues.substring(0, columnValues.length - 2);
+            query += ');';
+
+            console.log(query);
+
+            MySQL.query(query, function (error) {
+                if (error) {
+                    let info = {
+                        message: error.message,
+                        table: table,
+                        params: params
+                    }
+                    reject(info);
+                } else {
+                    resolve(params);
+                }
             });
                          
         });
