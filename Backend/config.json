@@ -1,6 +1,9 @@
-{"app": 
+{   "app": 
     {
     "nombre":"Running server...",
     "port": 3000
+    },
+    "database":{
+        "default":"mysql"
     }
 }
