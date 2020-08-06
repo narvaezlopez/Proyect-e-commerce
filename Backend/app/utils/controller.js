@@ -6,7 +6,7 @@ const Controller = function (TABLE) {
     const general = require("./general")();
     general.setDefaultDatabase(config.database.default);
     let model = general.getDatabaseModel();
-    general.connectMySQL();
+    
     //{{SERVER}}/users/ 
     //Lista todos los usuarios
     router.get('/', function (request, response) {
@@ -25,6 +25,24 @@ const Controller = function (TABLE) {
 
     });
 
+    //Trae un usuario por ID
+    router.get('/:id', function (request, response) {
+        let id = request.params.id;
+        let column_id=request.body.column_id;
+        if (true) {
+            model.getById(TABLE,column_id,id)
+                .then((rows) => {
+                    response.send(rows);
+                }).catch((error) => {
+                    console.error(error);
+                    response.send(error);
+                });
+        } else {
+            response.send({ error: 'No se ha enviado un token', message: validationToken.message });
+        }
+    });
+    
+    //Crear usuario 
     router.post('/', function(request, response){
         //if (validationToken.auth) {
         console.log("ENTERING POST");
@@ -40,6 +58,39 @@ const Controller = function (TABLE) {
                 });
         } else {
             response.send({ error: 'No se ha enviado un token', message: validationToken.message });
+        }
+    });
+
+    router.put('/:id',function(request,response){
+        let id = request.params.id;
+        let column_id=request.body.column_id;
+        if (true) {
+            model.updateData(TABLE, request.body,column_id, id)
+                .then((row) => {
+                    response.send(row);
+                }).catch((error) => {
+                    console.error(error);
+                    response.send(error);
+                });
+        } else {
+            response.send({ error: 'No se ha enviado un token' });
+        } 
+    });
+
+    router.delete('/:id', function (request, response) {
+        let id = request.params.id;
+        let column_id=request.body.column_id;
+        //if (validationToken.auth) {
+        if (true) {
+            model.delete(TABLE,column_id, id)
+                .then((message) => {
+                    response.send(message);
+                }).catch((error) => {
+                    console.error(error);
+                    response.send(error);
+                });
+        } else {
+            response.send({ error: 'No se ha enviado un token' });
         }
     });
 

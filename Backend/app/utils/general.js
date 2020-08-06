@@ -16,7 +16,7 @@ const General = function(){
             host: "localhost",
             user: "root",
             password: "root",
-            database: "sakila",
+            database: "e_commerce",
             queueLimit: 0
           });
         
