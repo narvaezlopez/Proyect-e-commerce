@@ -1,0 +1,39 @@
+.sideMenu__logo{
+    height: 10em;
+}
+
+.sideMenu__user{
+    margin: 10px 10px;
+}
+.sideMenu__options{
+    width: 100%;
+    margin:  auto;
+}
+.sideMenu_option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideMenu_optionTitle{
+    padding: 10px;
+    width: 100%;
+    background-color: var(--lightgreen-custom);
+}
+.sideMenu_optionTitle > span{
+    margin-left: 20px;
+}
+
+.sideMenu_optionContainer{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sideMenu_optionContainer > span{
+    padding: 10px;
+    margin-left: 20px;
+}
+span{
+    cursor: pointer;
+}
