@@ -16,6 +16,10 @@ import { AdminPanelComponent } from './components/admin-layout/admin-panel/admin
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { SideMenuComponent } from './components/admin-layout/side-menu/side-menu.component';
+import { AdminUsersComponent } from './components/admin-layout/admin-users/admin-users.component';
+import { AdminAddUserComponent } from './components/admin-layout/admin-add-user/admin-add-user.component';
+import { AdminProductComponent } from './components/admin-layout/admin-product/admin-product.component';
+import { AdminAddProductComponent } from './components/admin-layout/admin-add-product/admin-add-product.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { SideMenuComponent } from './components/admin-layout/side-menu/side-menu
     AdminPanelComponent,
     WishlistComponent,
     ShoppingCartComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    AdminUsersComponent,
+    AdminAddUserComponent,
+    AdminProductComponent,
+    AdminAddProductComponent
   ],
   imports: [
     BrowserModule,
