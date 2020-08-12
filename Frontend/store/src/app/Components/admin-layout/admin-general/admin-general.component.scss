@@ -1,0 +1,92 @@
+div{
+    .general{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-left: 50px;
+
+        div#title{
+            flex-direction: column;
+            background-color: var(--black-custom);
+            color: var(--lightgreen-custom);
+            border-radius: 10px;
+            margin-top: 40px;
+            font-family: ExtraBold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
+            line-height: 80px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: row;
+            width: 850px;
+            background-color: rgba(222, 222, 222, 0.53);
+            margin-top: 50px;
+            border: 2px solid var(--black-custom);
+            border-radius: 10px;
+
+            div#photo{
+                margin-top: 40px;
+                margin-left: 50px;
+                margin-bottom: 30px;
+                border: 1px solid var(--black-custom);
+                border-radius: 10px;
+                width: 180px;
+                height: 180px;
+                img{
+                    width: 160px;
+                    height: 160px;
+                    margin: 10px;
+                }
+                
+            }
+            div#Form{
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-left: 50px;
+                margin-bottom: 30px;
+                padding: 10px;
+                border: 2px solid var(--black-custom);
+                border-radius: 10px;
+                width: 500px;
+                font-family: MediumF;
+                div{
+                    margin-top: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                div#section{
+                    margin-top: 10px;
+                    border-top: 1px solid var(--black-custom);
+                    div{
+                        margin-top: 5px;
+                        button{
+                            border-radius: 10px;
+                            margin-top: 10px;
+                            background-color: var(--lightgreen-custom);
+                            line-height: 30px;
+                            padding-inline-start: 10px;
+                            padding-inline-end: 10px;
+                            font-family: MediumF;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                            }
+                            label{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

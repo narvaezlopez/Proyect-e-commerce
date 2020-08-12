@@ -12,6 +12,7 @@ import { AdminAddProductComponent } from './components/admin-layout/admin-add-pr
 import { AdminAddUserComponent } from './components/admin-layout/admin-add-user/admin-add-user.component';
 import { AdminProductComponent } from './components/admin-layout/admin-product/admin-product.component';
 import { AdminUsersComponent } from './components/admin-layout/admin-users/admin-users.component';
+import { AdminGeneralComponent } from './components/admin-layout/admin-general/admin-general.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,7 @@ const routes: Routes = [
       {path: 'add-user', component: AdminAddUserComponent},
       {path: 'products', component: AdminProductComponent},
       {path: 'add-product', component: AdminAddProductComponent},
+      {path: '', component: AdminGeneralComponent}
 
     ]
   },

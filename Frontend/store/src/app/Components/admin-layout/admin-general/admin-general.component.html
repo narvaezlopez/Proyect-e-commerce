@@ -1,0 +1,61 @@
+<div>
+    <div class="general">
+        <div id="title">
+            <h2>BIENVENIDO USUARIO</h2>
+        </div>
+
+        <div class="info">
+            <div id="photo">
+                <img src="../../../../assets/profile.svg">
+            </div>
+            <div id="Form">
+                <div>
+                    <label for="">Rol    : </label>
+                </div>
+                <div>
+                    <label for="">Nombre : </label>
+                </div>
+                <div>
+                    <label for="">Correo : </label>
+                </div>
+                <div>
+                    <label for="">Telefono : </label>
+                </div>
+                <div id="section" *ngIf="section==true">
+                    <div>
+                        Cambiar Contraseña:
+                    </div>
+                    <form action="">
+                        <div>
+                            <label for="">Contraseña actual : </label>
+                            <input type="password" required>
+                        </div>
+                        <div>
+                            <label for="">Contraseña nueva : </label>
+                            <input type="password" required>
+                        </div>
+                        <div>
+                            <label for="">Confirmar Contraseña : </label>
+                            <input type="password" required>
+                        </div>
+
+                    </form>
+                    <div>
+                        <button>
+                            <img src="../../../../assets/cancel.svg">
+                            <label>Cancelar</label>
+                        </button>
+                    </div>
+                </div>
+                <div id="section" *ngIf="section==false">
+                    <div>
+                        <button>
+                            <img src="../../../../assets/pencil.svg">
+                            <label for="">Cambiar Contraseña</label>                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

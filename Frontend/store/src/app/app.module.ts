@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,7 @@ import { AdminUsersComponent } from './components/admin-layout/admin-users/admin
 import { AdminAddUserComponent } from './components/admin-layout/admin-add-user/admin-add-user.component';
 import { AdminProductComponent } from './components/admin-layout/admin-product/admin-product.component';
 import { AdminAddProductComponent } from './components/admin-layout/admin-add-product/admin-add-product.component';
+import { AdminGeneralComponent } from './components/admin-layout/admin-general/admin-general.component';
 
 @NgModule({
   declarations: [
@@ -38,10 +41,12 @@ import { AdminAddProductComponent } from './components/admin-layout/admin-add-pr
     AdminUsersComponent,
     AdminAddUserComponent,
     AdminProductComponent,
-    AdminAddProductComponent
+    AdminAddProductComponent,
+    AdminGeneralComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
