@@ -61,6 +61,7 @@ const Controller = function (TABLE) {
         }
     });
 
+    //Actualiza usuario
     router.put('/:id',function(request,response){
         let id = request.params.id;
         let column_id=request.body.column_id;
@@ -77,6 +78,7 @@ const Controller = function (TABLE) {
         } 
     });
 
+    //Borra usuario
     router.delete('/:id', function (request, response) {
         let id = request.params.id;
         let column_id=request.body.column_id;

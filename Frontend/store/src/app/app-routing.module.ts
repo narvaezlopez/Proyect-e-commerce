@@ -8,6 +8,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { AdminAddProductComponent } from './components/admin-layout/admin-add-product/admin-add-product.component';
+import { AdminAddUserComponent } from './components/admin-layout/admin-add-user/admin-add-user.component';
+import { AdminProductComponent } from './components/admin-layout/admin-product/admin-product.component';
+import { AdminUsersComponent } from './components/admin-layout/admin-users/admin-users.component';
 
 const routes: Routes = [
   {
@@ -29,8 +33,16 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminPanelComponent
-  }
+    component: AdminPanelComponent,
+    children:[
+      {path: 'users', component: AdminUsersComponent},
+      {path: 'add-user', component: AdminAddUserComponent},
+      {path: 'products', component: AdminProductComponent},
+      {path: 'add-product', component: AdminAddProductComponent},
+
+    ]
+  },
+  {path: '**', pathMatch: 'full', redirectTo: ''}
 ];
 
 @NgModule({
