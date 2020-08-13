@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminAddUserComponent implements OnInit {
 
+  section:boolean=false;
   constructor() { }
 
   ngOnInit(): void {

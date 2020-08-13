@@ -2,7 +2,7 @@
     font-family: MediumF;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.1vw;
     .sideMenu_button{
         text-align: end;
         margin-bottom: 20px;
@@ -17,6 +17,7 @@
                 padding-inline-start: 5px;
                 padding-inline-end: 5px;
                 font-family: MediumF;
+                font-size: 1.1vw;
             }
         }
     }
@@ -31,7 +32,7 @@
         }
     }
     .sideMenu__user{
-        font-size: 18px;
+        font-size: 1.2vw;
         display: flex;
         background: var(--black-custom);
         border: 3px solid var(--darkgrey-custom);
@@ -47,7 +48,7 @@
         margin: auto;
         flex-direction: column;
         color: var(--white-custom);
-        font-size: 18px;
+        font-size: 1.2vw;
         .sideMenu_option{
             display: flex;
             flex-flow: column;
