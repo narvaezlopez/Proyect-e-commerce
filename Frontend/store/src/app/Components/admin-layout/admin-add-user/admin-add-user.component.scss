@@ -1,0 +1,185 @@
+div{
+    .general{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-left: 2vw;
+        div#title{
+            background-color: var(--black-custom);
+            color: var(--lightgreen-custom);
+            line-height: 80px;
+            margin-top: 4vh;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
+            border-radius: 10px;
+            flex-direction: column;
+            font-family: ExtraBold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2vw;
+        }
+        .info{
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(222, 222, 222, 0.53);
+            border: 2px solid var(--black-custom);
+            margin-top: 5vh;
+            border-radius: 10px;
+            font-family: MediumF;
+            div#photo{
+                margin-top: 4vh;
+                margin-left: 3vw;
+                border: 2px solid var(--black-custom);
+                border-radius: 10px;
+                width: 180px;
+                height: 195px;
+                img#profile{
+                    width: 160px;
+                    height: 160px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                div#add-photo{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        border-radius: 10px;
+                        background-color: var(--lightgreen-custom);
+                        line-height: 30px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-inline-start: 10px;
+                        padding-inline-end: 10px;
+                        font-family: MediumF;
+                        align-items: center;
+                        display: flex;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                        input{
+                            position: absolute;
+                            opacity: 0;
+                        }
+                    }
+
+                }
+                
+            }
+            div#Form{
+                display: flex;
+                flex-direction: column;
+                margin-top: 4vh;
+                margin-left: 3vw;
+                margin-right: 3vw;
+                margin-bottom: 4vh;
+                padding: 10px;
+                border: 2px solid var(--black-custom);
+                border-radius: 10px;
+                width: 50vw;
+                div#section{
+                    margin-top: 10px;
+                    form{
+                        div#data{
+                            margin-top: 5px;
+                            justify-content: center;
+                            align-items: center;
+                           label{
+                               margin-left: 10px;
+                               font-family: MediumF;
+                               font-size: 1.2vw;
+                           } 
+                           input{
+                               margin-left: 10px;
+                               border-radius: 5px;
+                               width: 10vw;
+                           }
+                        }
+                        div#contra{
+                            margin-top: 5px;
+                            justify-content: center;
+                            align-items: flex-start;
+                            margin-top: 20px;
+                            padding-top:20px;
+                            border-top:1px solid var(--black-custom);
+                            label{
+                                margin-left: 10px;
+                                font-family: MediumF;
+                                font-size: 1.2vw;
+                            } 
+                            input{
+                                margin-left: 10px;
+                                border-radius: 5px;
+                                width: 10vw;
+                            }
+                        }
+                    }
+                    div#botonera{
+                        display: flex;
+                        margin-top: 5px;
+                        button{
+                            border-radius: 10px;
+                            margin-top: 10px;
+                            background-color: var(--lightgreen-custom);
+                            line-height: 30px;
+                            padding-inline-start: 10px;
+                            padding-inline-end: 10px;
+                            font-family: MediumF;
+                            font-size: 1vw;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            margin-right: 1vw;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                            }
+                            label{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            div#add{
+                margin-top: 5vh;
+                margin-left: 4vw;
+                margin-right: 4vw;
+                margin-bottom: 6vh;
+                label#message{
+                    font-family: MediumItalic;
+                    font-size: 1.5vw;
+                }
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-top: 1px solid var(--black-custom);
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    button{
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        margin-right:10px;
+                        background-color: var(--lightgreen-custom);
+                        line-height: 30px;
+                        padding-inline-start: 10px;
+                        padding-inline-end: 10px;
+                        font-family: MediumF;
+                        font-size: 1vw;
+                        align-items: center;
+                        display: flex;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        label{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,84 @@
-<p>admin-add-user works!</p>
+<div>
+    <div class="general" *ngIf="section==false">
+        <div id="title">
+            <h2>AGREGAR USUARIO</h2>
+        </div>
+        <div class="info">
+            <div id="photo">
+                <img id="profile" src="../../../../assets/profile.svg">
+                <div id="add-photo">
+                    <button>
+                        <img src="../../../../assets/camera.svg">
+                        <input type="file">
+                    </button>
+                </div>
+            </div>
+            <div id="Form">
+                <div id="section" >
+                    <form action="">
+                        <div id="data">
+                            <label>Rol    : </label>
+                            <input type="text" required>
+                        </div>
+                        <div id="data">
+                            <label>Primer Nombre : </label>
+                            <input type="text" required>
+                            <label>Segundo Nombre : </label>
+                            <input type="text">
+                        </div>
+                        <div id="data">
+                            <label>Primer Apellido : </label>
+                            <input type="text" required>
+                            <label>Segundo Apellido : </label>
+                            <input type="text">
+                        </div>
+                        <div id="data">
+                            <label>Correo : </label>
+                            <input type="text">
+                            <label>Telefono : </label>
+                            <input type="phone">
+                        </div>
+                        <div id="contra">
+                            <label>Contraseña : </label>
+                            <input type="password" required>
+                            <label>Confirmar Contraseña : </label>
+                            <input type="password" required>
+                        </div>
+                    </form>
+                    <div id="botonera">
+                        <button>
+                            <img src="../../../../assets/check.svg">
+                            <label>Agregar</label>
+                        </button>
+                        <button>
+                            <img src="../../../../assets/cancel.svg">
+                            <label>Cancelar</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="general" *ngIf="section==true">
+        <div id="title">
+            <h2>AGREGAR USUARIO</h2>
+        </div>
+        <div class="info">
+            <div id="add">
+                <label id="message">
+                    Usuario agregado satisfactoriamente!
+                </label>
+                <div>
+                    <button>
+                        <img src="../../../../assets/add-user.svg">
+                        <label>Agregar Usuario</label>
+                    </button>
+                    <button>
+                        <img src="../../../../assets/list.svg">
+                        <label>Lista de usuarios</label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
