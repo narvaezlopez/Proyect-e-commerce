@@ -6,54 +6,50 @@ div{
         margin-left: 50px;
 
         div#title{
+            font-size: 1.1vw;
             flex-direction: column;
             background-color: var(--black-custom);
             color: var(--lightgreen-custom);
             border-radius: 10px;
-            margin-top: 40px;
+            margin-top: 4vh;
             font-family: ExtraBold;
             font-style: normal;
             font-weight: bold;
-            font-size: 30px;
-            padding-inline-start: 20px;
-            padding-inline-end: 20px;
+            padding-inline-start: 2vw;
+            padding-inline-end: 2vw;
             line-height: 80px;
         }
 
         .info{
             display: flex;
             flex-direction: row;
-            width: 850px;
             background-color: rgba(222, 222, 222, 0.53);
-            margin-top: 50px;
+            margin-top: 3vw;
             border: 2px solid var(--black-custom);
             border-radius: 10px;
 
             div#photo{
-                margin-top: 40px;
-                margin-left: 50px;
-                margin-bottom: 30px;
-                border: 1px solid var(--black-custom);
+                margin-top: 3vw;
+                margin-left: 3vw;
+                border: 2px solid var(--black-custom);
                 border-radius: 10px;
-                width: 180px;
-                height: 180px;
+                width: 17vw;
+                height: 17vw;
                 img{
-                    width: 160px;
-                    height: 160px;
-                    margin: 10px;
+                    width: 15vw;
+                    height: 15vw;
+                    margin: 1vw;
                 }
                 
             }
             div#Form{
                 display: flex;
                 flex-direction: column;
-                margin-top: 30px;
-                margin-left: 50px;
-                margin-bottom: 30px;
-                padding: 10px;
+                margin: 3vw;
+                padding: 1vw;
                 border: 2px solid var(--black-custom);
                 border-radius: 10px;
-                width: 500px;
+                width: 35vw;
                 font-family: MediumF;
                 div{
                     margin-top: 5px;
@@ -65,23 +61,40 @@ div{
                     border-top: 1px solid var(--black-custom);
                     div{
                         margin-top: 5px;
+                        flex-direction: row;
                         button{
-                            border-radius: 10px;
-                            margin-top: 10px;
                             background-color: var(--lightgreen-custom);
-                            line-height: 30px;
+                            border-radius: 10px;
+                            margin: 1vw;
+                            line-height: 25px;
                             padding-inline-start: 10px;
                             padding-inline-end: 10px;
                             font-family: MediumF;
-                            justify-content: center;
-                            align-items: center;
                             display: flex;
+                            align-items: center;
+                            float:right;
+                            outline: none;
+                            cursor: pointer;
                             img{
                                 width: 15px;
                                 height: 15px;
                             }
                             label{
                                 margin-left: 10px;
+                            }
+                        }
+                    }
+                    form{
+                        div{
+                            flex-direction: row;
+                            input{
+                                margin-left:10px ;
+                                border: none;
+                                outline: none;
+                                font-size: 20px;
+                                border-radius: 20px;
+                                padding-left:10px ;
+                                width: 13vw;
                             }
                         }
                     }

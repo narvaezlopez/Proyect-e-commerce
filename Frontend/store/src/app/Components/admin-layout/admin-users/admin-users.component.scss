@@ -1,123 +1,108 @@
-div{
-    .general{
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        margin-left: 50px;
+.users__container{
+    margin-left: 2vw;
+}
 
-        div#title{
-            flex-direction: column;
-            background-color: var(--black-custom);
-            color: var(--lightgreen-custom);
-            border-radius: 10px;
-            margin-top: 40px;
-            font-family: ExtraBold;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            padding-inline-start: 20px;
-            padding-inline-end: 20px;
-            line-height: 80px;
-        }
+.users__title{
+    width: 25vw;
+    background-color: var(--black-custom);
+    color: var(--lightgreen-custom);
+    line-height: 80px;
+    margin-top: 4vh;
+    padding-inline-start: 2vw;
+    padding-inline-end: 1vw;
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: ExtraBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.users__search{
+    margin: 3vw 0px;
+    width: 25vw;
+    border-radius: 20px;
+    border: 2px solid var(--black-custom);
+    display: flex;
+    justify-content: space-evenly;
+}
+.users__search input{
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    padding-left: 1vw;
+    font-size: 2vw;
+    outline: none;
+    border-radius: 20px;
+    background: transparent;
+}
+.users__search > img{
+    cursor: pointer;
+    height: 2vw;
+    margin: auto;
+}
+.users__admin{
+    overflow-y: scroll;
+    margin-top: 4vh;
+    height: 67vh;
+    width: 70vw;
+}
+.userCard__admin{
+    width: 100% ;
+    display: flex;
+    margin-bottom: 3vh;
+    
+}
 
-        .search{
-            outline: none;
-            margin-top: 31px;
-            border: 2px solid var(--darkgray-custom);
-            border-radius: 25px;
-            width: 330px;
-            height: 60px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-                input#search_input{
-                    outline: transparent;
-                    width: 280px;
-                    height: 30px;
-                    font-weight: 300;
-                    font-size: 24px;
-                    border: transparent;
-                    margin-top: 15px;
-                    margin-left: 10px;
-                }
-                img#search_icon{
-                    width: 27px;
-                    height: 27px;
-                    margin-top: 13px;
-                    margin-right: 10px;
-                }
-        }
+.userCard__photo{
+    margin: 1vw;
+    border: 2px solid var(--black-custom);
+    
+}
+.userCard__photo img{
+    width: 16vw;
+    height: 20vh;
+    margin: 1vw;
+}  
 
-        .info{
-            display: flex;
-            flex-direction: row;
-            width: 850px;
-            background-color: rgba(222, 222, 222, 0.53);
-            margin-top: 50px;
-            border: 2px solid var(--black-custom);
-            border-radius: 10px;
+.userCard__info{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border: 2px solid var(--black-custom);
+    position: relative;
+    margin: 1vw;
+}
 
-            div#photo{
-                margin-top: 40px;
-                margin-left: 50px;
-                margin-bottom: 30px;
-                border: 1px solid var(--black-custom);
-                border-radius: 10px;
-                width: 180px;
-                height: 180px;
-                img{
-                    width: 160px;
-                    height: 160px;
-                    margin: 10px;
-                }
-                
-            }
-            div#Form{
-                display: flex;
-                flex-direction: column;
-                margin-top: 30px;
-                margin-left: 50px;
-                margin-bottom: 30px;
-                padding: 10px;
-                border: 2px solid var(--black-custom);
-                border-radius: 10px;
-                width: 500px;
-                font-family: MediumF;
-                div{
-                    margin-top: 5px;
-                    justify-content: center;
-                    align-items: center;
-                }
-                div#section{
-                    margin-top: 10px;
-                    border-top: 1px solid var(--black-custom);
-                    div{
-                        margin-top: 5px;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        button{
-                            border-radius: 10px;
-                            margin-top: 10px;
-                            background-color: var(--lightgreen-custom);
-                            line-height: 30px;
-                            padding-inline-start: 10px;
-                            padding-inline-end: 10px;
-                            font-family: MediumF;
-                            justify-content: center;
-                            align-items: center;
-                            display: flex;
-                            img{
-                                width: 15px;
-                                height: 15px;
-                            }
-                            label{
-                                margin-left: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+.userCard__infoText{
+    padding: 1vw;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-family: BoldPoppins;
+    font-size: 2vh;
+}
+.userCard__infoBtn{
+    padding: 1vh;
+    margin-bottom: 2vh;
+    align-self: flex-end;
+    position: absolute;
+    right: 1vw;
+}
+
+.userCard__infoBtn > button{
+    background-color: var(--lightgreen-custom);
+    border-radius: 10px;
+    font-size: 1vw;
+    margin-right:1vw;
+    padding-inline-start: 1vw;
+    padding-inline-end: 1vw;
+    font-family: MediumF;
+    outline: none;
+    cursor: pointer;
+}
+
+.userCard__infoBtn > button:hover{
+    transform: scale(1.02);
 }
