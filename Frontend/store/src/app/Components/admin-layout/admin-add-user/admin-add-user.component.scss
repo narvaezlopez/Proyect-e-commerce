@@ -44,16 +44,16 @@ div{
                     display: flex;
                     justify-content: center;
                     button{
-                        border-radius: 10px;
-                        background-color: var(--lightgreen-custom);
-                        line-height: 30px;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        padding-inline-start: 10px;
-                        padding-inline-end: 10px;
-                        font-family: MediumF;
-                        align-items: center;
-                        display: flex;
+                            border-radius: 10px;
+                            background-color: var(--lightgreen-custom);
+                            line-height: 30px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            padding-inline-start: 10px;
+                            padding-inline-end: 10px;
+                            font-family: MediumF;
+                            align-items: center;
+                            display: flex;
                         img{
                             width: 15px;
                             height: 15px;
@@ -61,6 +61,7 @@ div{
                         input{
                             position: absolute;
                             opacity: 0;
+                            border: none;
                         }
                     }
 
@@ -88,12 +89,13 @@ div{
                            label{
                                margin-left: 10px;
                                font-family: MediumF;
-                               font-size: 1.2vw;
                            } 
                            input{
                                margin-left: 10px;
-                               border-radius: 5px;
-                               width: 10vw;
+                               border-radius: 20px;
+                               padding-left:1vw ;
+                               outline: none;
+                               border: none;
                            }
                         }
                         div#contra{
@@ -106,12 +108,13 @@ div{
                             label{
                                 margin-left: 10px;
                                 font-family: MediumF;
-                                font-size: 1.2vw;
                             } 
                             input{
-                                margin-left: 10px;
-                                border-radius: 5px;
-                                width: 10vw;
+                                margin-left: 1vw;
+                                border-radius: 20px;
+                                padding-left:1vw ;
+                                outline: none;
+                                border: none;
                             }
                         }
                     }
