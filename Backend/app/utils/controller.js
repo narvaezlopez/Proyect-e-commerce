@@ -34,7 +34,7 @@ const Controller = function (TABLE) {
                 .then((rows) => {
                     response.send(rows);
                 }).catch((error) => {
-                    console.error(error);
+                    //console.error(error);
                     response.send(error);
                 });
         } else {
@@ -93,6 +93,22 @@ const Controller = function (TABLE) {
                 });
         } else {
             response.send({ error: 'No se ha enviado un token' });
+        }
+    });
+
+    router.post('/:id', function (request, response) {
+        let id = request.params.id;
+        let column_id=request.body.column_id;
+        if (true) {
+            model.getById(TABLE,column_id,id)
+                .then((rows) => {
+                    response.send(rows);
+                }).catch((error) => {
+                    //console.error(error);
+                    response.send(error);
+                });
+        } else {
+            response.send({ error: 'No se ha enviado un token', message: validationToken.message });
         }
     });
 

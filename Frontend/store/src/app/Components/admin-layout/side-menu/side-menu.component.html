@@ -4,34 +4,34 @@
             <img src="../../../../assets/logoevernote.svg" alt="Logo">
         </div>
         <div class="sideMenu_button"> 
-            <button>
+            <button (click)="logout()">
                 <img src="../../../../assets/log-out.svg" alt="">
                 <label for="">Cerrar Sesión</label>
             </button>
         </div>
         <div class="sideMenu__user">
-            <span>Usuario: -</span>
+            <span routerLink="/admin/">Usuario: -</span>
         </div>
         <div class="sideMenu__options">
             
             <div class="sideMenu_option">
                 <div class="sideMenu_optionTitle">    
-                    <span> Administrar Productos</span>            
+                    <span routerLink="/admin/products"> Administrar Productos</span>            
                 </div>
                 <div class="sideMenu_optionContainer">
-                    <span>Productos</span>
-                    <span>Agregar Productos</span>
+                    <span routerLink="/admin/products">Productos</span>
+                    <span routerLink="/admin/add-product">Agregar Productos</span>
                 </div>
                 
             </div>
 
             <div class="sideMenu_option">
                 <div class="sideMenu_optionTitle">    
-                    <span> Administrar Usuarios</span>            
+                    <span routerLink="/admin/users"> Administrar Usuarios</span>            
                 </div>
                 <div class="sideMenu_optionContainer">
-                    <span >Usuarios</span>
-                    <span>Agregar Usuarios</span>
+                    <span routerLink="/admin/users">Usuarios</span>
+                    <span routerLink="/admin/add-user">Agregar Usuarios</span>
                 </div>
                 
             </div>

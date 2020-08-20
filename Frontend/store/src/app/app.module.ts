@@ -23,6 +23,8 @@ import { AdminAddUserComponent } from './components/admin-layout/admin-add-user/
 import { AdminProductComponent } from './components/admin-layout/admin-product/admin-product.component';
 import { AdminAddProductComponent } from './components/admin-layout/admin-add-product/admin-add-product.component';
 import { AdminGeneralComponent } from './components/admin-layout/admin-general/admin-general.component';
+import { EUserService } from './services/e-user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,12 +47,14 @@ import { AdminGeneralComponent } from './components/admin-layout/admin-general/a
     AdminGeneralComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
