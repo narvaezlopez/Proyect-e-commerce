@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  public option = false;
+  public login;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  togleOption(){
+    this.option = !this.option;
+  }
 }

@@ -1,0 +1,121 @@
+.login{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,141,71,1) 0%, rgba(2,240,121,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login__container{
+    height: 75%;
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 4px 44px 2px rgba(0, 0, 0, 0.6);
+    
+    
+
+}
+.login__boxItems{
+    height: 100%;
+    width: 55%;
+    background-color: var(--white-custom);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.login__title{
+    text-align: center;
+    margin: 25px 0px;
+    color: var(--white-custom);
+    background-color: var(--black-custom);
+    padding: 10px;
+}
+.login_image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.login__options{
+    display: flex;
+}
+
+.login__option{
+    width: 50%;
+    //border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+}
+/* .option__active{
+    border-bottom: 4px solid black;
+} */
+.login__optionActive{
+    width: 100%;
+    height: 5px;
+}
+
+.login__optionSelector{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+.login__boxImg{
+    height: 100%;
+    width: 45%;
+    background-color: var(--black-custom);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.optionActive{
+    border-bottom: 3px solid black;
+    /* transition: all 0.3s ease; */
+}
+
+.formLogin__container{
+    width: 55%;
+    height: 56%;
+    margin: auto;
+    
+}
+form{
+    
+    width: 100%;
+    padding: 0px 10px;
+    padding-top: 15px ;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+}
+form > input{
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid var(--black-custom);
+}
+form input:nth-of-type(1){
+    margin-bottom: 20px;
+}
+form label{
+    margin: 7px 0px;
+}
+
+.formLogin__resetPw{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+form input[type="submit"]{
+    color: var(--white-custom);
+    background-color: var(--black-custom);
+    width: 40%;
+    margin: 20px auto;
+    cursor: pointer;
+    
+}

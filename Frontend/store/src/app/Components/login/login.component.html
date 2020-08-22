@@ -1,1 +1,67 @@
-<p>login works!</p>
+<div class="login">
+
+    <div class="login__container">
+
+        <div class="login__boxItems">
+            <div class="login__title">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="login_image">
+                <img src="../../../assets/loginImage.svg" alt="">
+            </div>
+
+            <div class="login__options">
+
+                <div [ngClass]="option ? 'optionActive':''" (click)="togleOption()" class="login__option ">
+                    <h3>Ingreso con Google</h3>
+                </div>
+                <div [ngClass]="option ? '':'optionActive'" (click)="togleOption()" class="login__option ">
+
+                    <h3>Ingreso con tu correo</h3>
+                </div>
+
+            </div>
+       <!--      <div class="login__optionActive">
+                <div class="login__optionSelector"></div>
+            </div> -->
+            <div class="formLogin__container">
+                <form>
+                    <label for="">Correo</label>
+                    <input 
+                    type="email" 
+                    name="correo" 
+                    #correo="ngModel" 
+                    [(ngModel)]=login 
+                    autocomplete="off"
+                    required/>
+
+                    <label for="">Contraseña</label>
+                    <input type="password" 
+                    name="contrasena" 
+                    #contrasena="ngModel" 
+                    [(ngModel)]=login 
+                    autocomplete="off"
+                    required/>
+
+
+                    <div class="formLogin__resetPw">
+                        <a  class="link">Olvide mi contrasena</a>
+                    </div>
+                    <input type="submit" value="Iniciar Sesion" id="submit"/>
+                    <div class="formLogin__register">
+                        <u><span>No tienes una cuenta? Registrate <strong> <a >aqui</a> </strong> </span></u>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <div class="login__boxImg">
+
+        </div>
+
+    </div>
+
+</div>
