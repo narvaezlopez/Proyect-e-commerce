@@ -20,9 +20,6 @@ let user_rolController = require('./app/utils/controller')('user_rol');
 let categoriesController = require('./app/utils/controller')('categories');
 
 //SERVER CONNECTION
-app.use(cors());
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
 
 //CONTROLLERS
 app.use('/e_user', e_userController);
