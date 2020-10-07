@@ -20,6 +20,7 @@ let user_rolController = require('./app/utils/controller')('user_rol');
 let categoriesController = require('./app/utils/controller')('categories');
 
 //SERVER CONNECTION
+//commit firma
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
